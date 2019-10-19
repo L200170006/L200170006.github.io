@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {                
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: inherit;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MySQL Full-Text Search</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Welcome</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Tugas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">TUGAS 2</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">MySQL Full-Text Search</h2>
+        <a href="index.html" target="_blank" class="btn btn-primary js-scroll-trigger">HOME PAGE</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Tugas </h2>
+          <p class="text-white-50"> Welcome to Tugas 2</p>
+        </div>
+      </div>
+      <img src="" class="img-fluid" alt="">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4></h4>
+            <p class="text-black-50 mb-0"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/pmysql.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white"></h4>
+                <p class="mb-0 text-white-50">
+
+				</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/ddl2.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white"></h4>
+                <p class="mb-0 text-white-50">
+</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <!-----Project three--->
+	  
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/dml1.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white"></h4>
+                <p class="mb-0 text-white-50">
+</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>
+      <p class="mb-0 text-black-50"><p><b><h3 align="center">MySQL Full-Text Searching</h3></b></br></br>
+                           Jika Anda telah menggunakan mesin pencari seperti Google atau Bing, Anda menggunakan pencarian teks lengkap atau FTS. Mesin pencari mengumpulkan konten dari situs web ke dalam basis data dan memungkinkan Anda untuk mencari berdasarkan kata kunci.
+
+Selain mesin pencari, FTS memberdayakan hasil pencarian di situs web seperti Blog, Berita, E-commerce, dan banyak lagi.
+
+Pencarian teks lengkap adalah teknik untuk mencari dokumen yang tidak cocok dengan kriteria pencarian. Dokumen adalah entitas basis data yang berisi data tekstual misalnya, deskripsi produk, posting blog, dan artikel.
+
+Misalnya, Anda dapat mencari Kayu dan Logam, FTS dapat mengembalikan hasil yang berisi kata-kata yang dicari secara terpisah, hanya Kayu atau Logam, atau hasil yang berisi kata-kata dalam urutan Word dan Logam yang berbeda, atau Logam dan Kayu.</br>
+        Full-text Searching adalah salah satu fungsi yang terdapat dalam database MySQL yang dapat digunakan untuk  mengoptimalkan proses dan hasil pencarian.<br>
+      </p>
+<p>
+<b>A. Membuat full-text searching</b><br></br>
+Full-­text  index  dapat  dibuat  saat  proses  pembuatan  tabel  dengan  perintah  “CREATE TABLE” atau saat perubahan struktur table yang sudah ada dengan menggunakan perintah “ALTER TABLE” atau “CREATE INDEX”.<br><br>
+<b>>></b>syntax perintah "CREATE TABLE":<br>
+CREATE TABLE table_name(<br>
+column_list,<br>
+...,<br>
+FULLTEXT (column1,column2,..)<br>
+);<br>
+contoh:<br>
+CREATE TABLE posts (<br>
+id INT NOT NULL AUTO_INCREMENT,<br>
+title VARCHAR(255) NOT NULL,<br>
+body TEXT,<br>
+PRIMARY KEY (id),<br>
+FULLTEXT KEY (body )<br>
+);<br><br>
+<b>>></b>sintax perintah "ALTER TABLE":<br>
+ALTER TABLE table_name  <br>
+ADD FULLTEXT(column_name1, column_name2,…)<br>
+);<br>
+contoh:<br>
+ALTER TABLE products  <br>
+ADD FULLTEXT(productDescription,productLine);<br><br>
+<b>>></b>sintax perintah "CREATE INDEX":<br>
+CREATE FULLTEXT INDEX index_name<br>
+ON table_name(idx_column_name,...)<br>
+);<br>
+contoh:<br>
+CREATE FULLTEXT INDEX address<br>
+ON offices(addressLine1,addressLine2);<br><br>
+</p>
+<p>
+<b>B. MySQL Natural Language Full-Text Searches</b><br></br>
+Untuk melakukan <i>Natural Language Full-Text Searches</i>, Anda menggunakan fungsi MATCH () dan AGAINST (). Fungsi MATCH () menentukan kolom tempat Anda ingin mencari dan fungsi AGAINST () menentukan kondisi pencarian yang akan digunakan.<br>
+Berikut contoh penggunaan Full-Text Searching tipe Natural Language :<br>
+<table border=1>
+<tr>
+<td><b>SELECT * FROM article WHERE MATCH (title) AGAINST ('tutorial');</b></td>
+</tr>
+
+</table>atau<br>
+<table border=1>
+<tr>
+<td><b>SELECT * FROM article WHERE MATCH(title) AGAINST('tutorial' IN NATURAL LANGUAGE MODE);</b></td>
+</tr>
+
+</table>
+Query diatas menghasilkan data pada field title yang mengandung kata “tutorial”.<br>
+<table border="1">
+<tr>
+<td>id</td>
+<td align="center">title</td>
+<td align="center">body</td>
+</tr>
+<tr>
+<td>1</td>
+<td>PHP dan Mysql:Tutorial Dasar</td>
+<td>Pada tutorial kali ini, kita akan mencoba melakukan...</td>
+</tr>		
+</table>
+</p>
+<p>
+<b>C. MySQL Boolean Full-Text Searches</b><br>
+MySQL memungkinkan Anda untuk melakukan Full-Text Searches berdasarkan permintaan yang sangat kompleks dalam mode Boolean bersama dengan operator Boolean.<br>
+berikut ini operator dan fungsinya pada mode Boolean:<br>
+<table border="1">
+<tr>
+<td>Operator</td>
+<td align="center">Deskripsi</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td>keyword harus terdapat pada semua hasil yang didapat</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td>keyword tidak boleh ada pada hasil yang didapat</td>
+</tr>
+<tr>
+<td align="center">></td>
+<td>keyword termasuk pada hasil yang didapat dengan urutan berdasar ranking secara increase</td>
+</tr>
+<tr>
+<td align="center"><</td>
+<td>keyword termasuk pada hasil yang didapat dengan urutan berdasar ranking secara decrease</td>
+</tr>
+<tr>
+<td align="center">()</td>
+<td>digunakan untuk melakukan grouping/pengelompokan dan dapat menambahkan operator lain untuk meningkatkan relevansi hasil pencarian</td>
+</tr>
+<tr >
+<td align="center">()</td>
+<td>digunakan untuk melakukan grouping/pengelompokan dan dapat menambahkan operator lain untuk meningkatkan relevansi hasil pencarian</td>
+</tr>
+<tr>
+<td align="center">~</td>
+<td>berfungsi sebagai operator negasi, jika sebuah keyword diberikan tanda ~, mengakibatkan relevansi/score minus</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td>merupakan operator wildcard</td>
+</tr>
+<tr>
+<td align="center">" "</td>
+<td>digunakan pada awal dan akhir keyword yang terdiri dari dua kata atau lebih</td>
+</tr>				
+</table>
+contoh:<br><br>
+<table border=1>
+<tr>
+<td><b>SELECT * FROM articles WHERE MATCH (title,body) AGAINST ('+mysql -database' IN BOOLEAN MODE);</b></td>
+</tr>
+
+</table>
+Hasil yang diperoleh harus mengandung kata mysql dan tidak boleh mengandung katadatabase pada field title dan body.<br>
+<table border="1">
+<tr>
+<td>id</td>
+<td align="center">title</td>
+<td align="center">body</td>
+</tr>
+<tr>
+<td>2</td>
+<td>How To Use MySQL Well</td>
+<td>After you went through a ...</td>
+</tr>	
+<tr>
+<td>4</td>
+<td>1001 MySQL Tricks</td>
+<td>1. Never run mysqld as root. 2.	</td>
+</tr>
+<tr>
+<td>6</td>
+<td>MySQL Security</td>
+<td>When configured properly, MySQL	</td>
+</tr>		
+</table>
+<br>
+<table border=1>
+<tr>
+<td><b>SELECT * FROM articles WHERE MATCH (title,body) AGAINST ('tutor*' IN BOOLEAN MODE);</b></td>
+</tr>
+
+</table>
+Penambahan asterisk (*) pada awal atau akhir keyword berfungsi seperti perintah LIKE ‘tutor%’ .<br>
+<table border="1">
+<tr>
+<td>id</td>
+<td align="center">title</td>
+<td align="center">body</td>
+</tr>
+<tr>
+<td>1</td>
+<td>MySQL Tutorial</td>
+<td>BMS stands for DataBase ...</td>
+</tr>
+</table><br>
+<table border=1>
+<tr>
+<td><b>SELECT * FROM articles WHERE MATCH (title,body) AGAINST ('+mysql+(>tutorial < database)' IN BOOLEAN MODE);</b></td>
+</tr>
+
+</table>
+Penggunaan  operator  >   dan  <   menghasilkan  data  yang  mengandung  kata  mysql  dan tutorial memiliki score relevansi yang lebih tinggi dibandingkan data yang  mengandung kata mysql dan database, dan seluruh hasil harus mengandung kata mysql+tutorial atau database.<br>
+<table border="1">
+<tr>
+<td>id</td>
+<td align="center">title</td>
+<td align="center">body</td>
+</tr>
+<tr>
+<td>1</td>
+<td>MySQL Tutorial</td>
+<td>BMS stands for DataBase ...</td>
+</tr>
+<tr>
+<td>5</td>
+<td>MySQL vs. YourSQL </td>
+<td>In the following database comparison...</td>
+</tr>
+</table><br>
+<table border=1>
+<tr>
+<td><b>SELECT * FROM articles WHERE MATCH (title,body) AGAINST ('"mysql tutorial"' IN BOOLEAN MODE);</b></td>
+</tr>
+
+</table>
+Hasil pencarian harus mengandung kata “mysql“ yang kemudian diikuti kata “tutorial“.<br>
+<table border="1">
+<tr>
+<td>id</td>
+<td align="center">title</td>
+<td align="center">body</td>
+</tr>
+<tr>
+<td>1</td>
+<td>MySQL Tutorial</td>
+<td>BMS stands for DataBase ...</td>
+</tr>
+</table>
+			
+</p>
+        </p>
+      
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container" >
+
+      <div class="row ">
+	  
+	  <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Location</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-15c5be962baae9b52ed3eb0d1be53674-ebfb43be8273480c548dae26f3e04cbae5f143da&flowName=GlifWebSignIn&flowEntry=SignUp">Surakarta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+	  
+
+        
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-15c5be962baae9b52ed3eb0d1be53674-ebfb43be8273480c548dae26f3e04cbae5f143da&flowName=GlifWebSignIn&flowEntry=SignUp">bagusnurilanam@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+08156567002</div>
+            </div>
+          </div>
+        </div>
+      </div>	
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Your Website 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
